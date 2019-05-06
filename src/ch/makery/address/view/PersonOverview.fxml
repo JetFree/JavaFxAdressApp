@@ -18,7 +18,7 @@
         <items>
             <TableView fx:id="personTable" prefHeight="200.0" prefWidth="200.0">
               <columns>
-                <TableColumn fx:id="firtNameColumn" prefWidth="75.0" text="First Name" />
+                <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
                 <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
               </columns>
                <columnResizePolicy>
@@ -58,13 +58,13 @@
                   </GridPane>
                   <ButtonBar layoutX="137.0" layoutY="244.0" prefHeight="40.0" prefWidth="142.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
                     <buttons>
-                      <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="New" />
-                        <Button mnemonicParsing="false" text="Delete">
+                      <Button mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="31.0" prefWidth="91.0" text="New" />
+                        <Button mnemonicParsing="false" onAction="#handleDeletePerson" text="Delete">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                         </Button>
-                        <Button mnemonicParsing="false" text="Edit" />
+                        <Button mnemonicParsing="false" onAction="#handleEditPerson" text="Edit" />
                     </buttons>
                      <opaqueInsets>
                         <Insets />
